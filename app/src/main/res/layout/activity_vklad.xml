@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activities.VkladActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto"
+                android:text="Закрыть"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#336FEE"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Вклад"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Подберите условия"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/srok2Button"
+                                android:background="@drawable/srok_select_bg"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="2 мес."
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/srok3Button"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/srok_select_bg"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="3 мес."
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/srok6Button"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/srok_select_bg"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="6 мес."
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/srok12Button"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/srok_select_bg"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="12 мес."
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:id="@+id/srokEtcButton"
+                                android:layout_marginStart="15dp"
+                                android:background="@drawable/srok_select_bg"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Другое"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/srok_select_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/srokTextView"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="?"
+                                android:textColor="@color/black"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Срок"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/srok_select_bg"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/stavkaTextView"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="?"
+                                android:textColor="@color/black"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="Ставка"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/srok_select_bg"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:text="Повысить ставку"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/infoButton"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/ic_info"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/switchCompat"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchCompat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            app:thumbTint="#FFDD2D"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Калькулятор"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Укажите сумму, а мы рассчитаем доход"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                    <com.cottacush.android.currencyedittext.CurrencyEditText
+                        android:id="@+id/sumEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        app:currencySymbol="₽"
+                        android:background="@drawable/custom_edittext"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Сумма"
+                        android:inputType="number"
+                        android:paddingHorizontal="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#6C6F71"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Доходность"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sumEditText" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="?"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="В конце срока"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dohodTextView"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="?"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/textView7" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/openButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:background="@drawable/primary_button"
+                android:fontFamily="@font/roboto"
+                android:text="Открыть вклад"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

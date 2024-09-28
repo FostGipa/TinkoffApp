@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OTPVerifyActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Введите код"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTextView"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Код отправлен на почту: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textAlignment="center"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/otp_bg"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:id="@+id/otpCodeEditText1"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"/>
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/otp_bg"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:id="@+id/otpCodeEditText2"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"/>
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/otp_bg"
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:id="@+id/otpCodeEditText3"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"/>
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/otp_bg"
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:id="@+id/otpCodeEditText4"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"/>
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/otp_bg"
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:id="@+id/otpCodeEditText5"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"/>
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/otp_bg"
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:id="@+id/otpCodeEditText6"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mainSignupButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/roboto"
+            android:text="Готово"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Для первого EditText -->
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0%"
+        android:toXDelta="-50%"
+        android:fromYDelta="0%"
+        android:toYDelta="0%" />
+
+    <!-- Для второго EditText -->
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0%"
+        android:toXDelta="50%"
+        android:fromYDelta="0%"
+        android:toYDelta="0%" />
+
+    <alpha
+        android:duration="1000"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+    <!-- Возврат первого EditText в центр -->
+    <translate
+        android:startOffset="1000"
+        android:duration="0"
+        android:fromXDelta="-50%"
+        android:toXDelta="0%"
+        android:fromYDelta="0%"
+        android:toYDelta="0%" />
+
+    <!-- Возврат второго EditText в центр -->
+    <translate
+        android:startOffset="1000"
+        android:duration="0"
+        android:fromXDelta="50%"
+        android:toXDelta="0%"
+        android:fromYDelta="0%"
+        android:toYDelta="0%" />
+
+    <alpha
+        android:startOffset="1000"
+        android:duration="0"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+</set>

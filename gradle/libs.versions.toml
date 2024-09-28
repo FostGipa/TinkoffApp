@@ -1,0 +1,43 @@
+[versions]
+agp = "8.6.0"
+biometric = "1.1.0"
+currencyedittext = "1.0.0"
+expandablelayout = "1.0.7"
+gotrueKt = "2.4.1"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+ktorClientAndroid = "2.3.10"
+lifecycleViewmodelCompose = "2.8.0"
+maskededittext = "5.0.1"
+material = "1.11.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+recyclerviewSwipedecorator = "1.4"
+
+[libraries]
+androidx-biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+currencyedittext = { module = "com.cottacush:CurrencyEditText", version.ref = "currencyedittext" }
+expandablelayout = { module = "com.github.skydoves:expandablelayout", version.ref = "expandablelayout" }
+gotrue-kt = { module = "io.github.jan-tennert.supabase:gotrue-kt", version.ref = "gotrueKt" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorClientAndroid" }
+maskededittext = { module = "io.github.vicmikhailau:MaskedEditText", version.ref = "maskededittext" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+postgrest-kt = { module = "io.github.jan-tennert.supabase:postgrest-kt", version.ref = "gotrueKt" }
+recyclerview-swipedecorator = { module = "it.xabaras.android:recyclerview-swipedecorator", version.ref = "recyclerviewSwipedecorator" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
